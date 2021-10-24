@@ -1,0 +1,19 @@
+digraph G{
+	edge[fontname="FangSong"];
+	node[peripheries=2,fontname="Fangname"];
+	size="16,16";
+	main[shape="box"];
+	main[label="from here"]
+	main->parse[weight=8]
+	parse->execute;
+	main->init[style=dotted];
+
+	main->cleanup;
+	execute->{make_string;printf;}
+	edge[color=red];
+	init->make_string[label="1000 touch"];
+	main->printf[label="make a \n string"];
+	
+	node[shape=box,style=filled,color=".7 .3 1.0"];
+	execute->compare;
+}

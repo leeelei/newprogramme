@@ -1,0 +1,9 @@
+digraph G{
+	node1;
+	node2;
+	node3;
+
+	node1->node2[lable="edge_1_1"];
+	node1->node3[lable="edge_1_3"];
+	node2->node3[lable="edge_2_3"];
+}
